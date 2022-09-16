@@ -25,7 +25,7 @@
                         </ul>
                     </dd>
                 </div>
-                <dd class="gift-menu__image"><img src="/gift/image-gift01.jpg"></dd>
+                <dd class="gift-menu__image"><img src="~assets/image/gift/image-gift01.jpg"></dd>
             </dl>
             <dl class="gift-product product02">
                 <div class="gift-menu">
@@ -42,7 +42,7 @@
                         </ul>
                     </dd>
                 </div>
-                <dd class="gift-menu__image"><img src="/gift/image-gift02.jpg"></dd>
+                <dd class="gift-menu__image"><img src="~assets/image/gift/image-gift02.jpg"></dd>
             </dl>
             <dl class="gift-product product02">
                 <div class="gift-menu">
@@ -61,7 +61,7 @@
                         </ul>
                     </dd>
                 </div>
-                <dd class="gift-menu__image"><img src="/gift/image-gift03.jpg"></dd>
+                <dd class="gift-menu__image"><img src="~assets/image/gift/image-gift03.jpg"></dd>
             </dl>
         </div>
         <div class="last-text"><span>上記の他、ご予算やご用途に合わせて</span><span>お作りできます。</span><br>お気軽にお問い合わせ下さい。</div>
@@ -70,13 +70,50 @@
   </div>
 </template>
 
+<script>
+  export default {
+    transition: {
+      name: "page",
+      mode: "out-in",
+    },
+    head() {
+    return {
+      title: "お肉の贈答用ギフト",
+      htmlAttrs: {
+      lang: 'ja',
+      prefix: 'og: http://ogp.me/ns#',
+    },
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "宮崎牛の肉ギフト。お歳暮やお中元、季節のご挨拶や入学祝い、就職祝いなどに宮崎牛の詰め合わせはいかがでしょうか",
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: '宮崎牛の肉ギフト。お歳暮やお中元、季節のご挨拶や入学祝い、就職祝いなどに宮崎牛の詰め合わせはいかがでしょうか',
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content:
+            'https://meatfactory-tsukuba.com/gift/ogp-image.jpg',
+        },
+      ],
+    };
+  },
+  };
+  </script>
+
 <style lang="scss" scoped>
   $color-red: rgb(188, 2, 2);
 $max-width: 1360px;
   .header {
     height: 20vh;
     position: relative;
-    background-image: url(/gift/bg-top.jpg);
+    background-image: url(~assets/image/gift/bg-top.jpg);
     background-size: cover;
     background-position: center center;
     &::after {

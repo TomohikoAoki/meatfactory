@@ -102,7 +102,7 @@
                     height: 0;
                     padding-top: 50px;
                     background-repeat: no-repeat;
-                    background-image: url(/common/footer-link.gif);
+                    background-image: url(~assets/image/common/footer-link.gif);
                 }
             }
         }

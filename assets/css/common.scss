@@ -14,6 +14,21 @@ body {
     fill: #fff;
 }
 
-.buta {
-    fill: #fff;
+.st1 {
+    fill: #af0404;
+}
+
+.tokoton {
+    fill: #232323;
+}
+
+//ページ遷移アニメーション
+.page-enter-active,
+.page-leave-active {
+    transition: opacity 0.5s;
+}
+
+.page-enter,
+.page-leave-to {
+    opacity: 0;
 }
