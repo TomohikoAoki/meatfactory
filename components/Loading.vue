@@ -11,6 +11,14 @@
         dataLoadFinish: false
       }
     },
+    methods: {
+      start() {
+        this.dataLoadFinish = true
+      },
+      finish() {
+        this.dataLoadFinish = false
+      }
+    },
     mounted() {
       window.addEventListener('load', () => {
         this.dataLoadFinish = true

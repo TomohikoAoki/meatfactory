@@ -75,16 +75,15 @@ export default {
     buildModules: [],
 
     // Modules: https://go.nuxtjs.dev/config-modules
-    modules: ["nuxt-lazy-load", "@nuxtjs/gtm"],
+    modules: ["nuxt-lazy-load", "@nuxtjs/gtm", "@nuxtjs/axios"],
     gtm: {
-        id: 'GTM-KGM2GLC'
+        id: "GTM-KGM2GLC",
     },
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {},
 
     render: {
-        static: { maxAge: '1y' }
+        static: { maxAge: "1y" },
     },
-
 };
